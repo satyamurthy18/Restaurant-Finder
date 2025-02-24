@@ -17,7 +17,7 @@ const port = 6969;
 
 // Enable CORS - Development configuration
 app.use(cors({
-  origin: true, // Allow all origins in development
+  origin: '*', // Allow all origins in development
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'Accept']
