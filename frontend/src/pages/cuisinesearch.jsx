@@ -132,7 +132,7 @@ export default function CuisineSearch() {
         params.append('maxDistance', maxDistance.toString());
       }
 
-      const response = await axios.get(`http://localhost:6969/restaurants-by-cuisine?${params}`);
+      const response = await axios.get(`https://restaurant-finder-mumk.onrender.com/restaurants-by-cuisine?${params}`);
 
       if (!response.data) {
         throw new Error('No data received');
@@ -254,7 +254,7 @@ export default function CuisineSearch() {
 
     try {
       const response = await axios.post(
-        `http://localhost:6969/api/analyze-image?page=${page}&limit=6`, 
+        `https://restaurant-finder-mumk.onrender.com/api/analyze-image?page=${page}&limit=6`, 
         formData,
         {
           headers: {

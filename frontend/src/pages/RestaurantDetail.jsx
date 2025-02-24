@@ -14,7 +14,7 @@ export default function RestaurantDetail() {
   useEffect(() => {
     const fetchRestaurantDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:6969/restaurant/${id}`);
+        const response = await axios.get(`https://restaurant-finder-mumk.onrender.com/restaurant/${id}`);
         setRestaurant(response.data);
         setLoading(false);
       } catch (err) {
